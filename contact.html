@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Your Name</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <input type="checkbox" id="nav-toggle" />
+  <div class="nav-inner">
+    <span class="nav-brand">YourName.dev</span>
+    <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Open to internships, research collaborations, and interesting conversations.</p>
+
+    <div class="contact-grid">
+
+      <!-- Contact form (Formspree-ready) -->
+      <!-- To activate: create a free form at formspree.io, replace YOUR_FORM_ID below -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Internship opportunity" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about the opportunity..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn" style="width:100%;">Send Message</button>
+      </form>
+
+      <!-- Social / direct links -->
+      <div>
+        <h3 style="margin-bottom:1.2rem;">Find Me Online</h3>
+        <div class="social-links">
+
+          <a href="https://github.com/YourUsername" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">&#x1F4BB;</span>
+            <div>
+              <strong>GitHub</strong>
+              <div style="font-size:.82rem;color:var(--muted);">github.com/YourUsername</div>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/yourhandle" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">&#x1F517;</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <div style="font-size:.82rem;color:var(--muted);">linkedin.com/in/yourhandle</div>
+            </div>
+          </a>
+
+          <a href="mailto:your.email@university.edu" class="social-link">
+            <span class="social-icon">&#x2709;&#xFE0F;</span>
+            <div>
+              <strong>Email</strong>
+              <div style="font-size:.82rem;color:var(--muted);">your.email@university.edu</div>
+            </div>
+          </a>
+
+          <a href="https://twitter.com/yourhandle" class="social-link" target="_blank" rel="noopener">
+            <span class="social-icon">&#x1F426;</span>
+            <div>
+              <strong>Twitter / X</strong>
+              <div style="font-size:.82rem;color:var(--muted);">@yourhandle</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Built with plain HTML &amp; CSS &mdash; hosted free on GitHub Pages.</p>
+  <p style="margin-top:.4rem;">
+    <a href="https://github.com/YourUsername">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>
+  </p>
+</footer>
+
+</body>
+</html>
