@@ -1,271 +1,205 @@
-# How to Put Your Portfolio Live on GitHub Pages
+# How to Put Your Portfolio Live on the Internet
 
-This guide takes you from zero — no GitHub account, no coding experience — to a live portfolio URL you can share with anyone.
+By the end of this guide, you will have a real website with a link you can share with anyone — for free.
 
-By the end you will have a URL that looks like:
-`https://your-username.github.io/undergrad-eportfolio-tutorial/`
+Your link will look like this: `https://your-username.github.io/undergrad-eportfolio-tutorial/`
 
----
-
-## What You Need
-
-- A laptop or desktop computer (Windows, Mac, or Linux)
-- A browser
-- An email address to create a GitHub account
-
-That's it. You don't need to install anything.
+You do not need to install anything. You only need a browser.
 
 ---
 
-## Part 1 — Understand the Folder Structure
+## Part 1 — What Are All These Files?
 
-Before anything else, understand what the files are and where things go.
+When you open the project folder, here is what everything is:
 
 ```
 undergrad-eportfolio-tutorial/
 │
-├── index.html          ← Your HOME PAGE. This is what loads when someone visits your URL.
-├── projects.html       ← Projects page
-├── skills.html         ← Skills page
-├── resume.html         ← Resume / timeline page
-├── contact.html        ← Contact page
+├── index.html          ← Your HOME PAGE. This is the first page people see.
+├── projects.html       ← Your projects page
+├── skills.html         ← Your skills page
+├── resume.html         ← Your resume / work history page
+├── contact.html        ← Your contact page
 │
 ├── css/
-│   └── style.css       ← The stylesheet that controls ALL the colours and layout
+│   └── style.css       ← Controls ALL the colours and layout across every page
 │
-├── images/             ← CREATE THIS FOLDER for your photos and project screenshots
-│   ├── profile.jpg     ← Your profile photo (name it exactly this, or update the HTML)
-│   ├── project1.png    ← Screenshot of your first project
-│   └── project2.png    ← Screenshot of your second project
+├── images/             ← Put your photos and screenshots here
+│   └── profile.jpg     ← Your profile photo — name it exactly this
 │
-├── resume.pdf          ← Your CV as a PDF (name it exactly this, or update the HTML)
+├── resume.pdf          ← Your CV as a PDF — name it exactly this
 │
-├── templates/          ← The 6 themed starter templates
-│   ├── index.html      ← Gallery page showing all 6 themes
-│   ├── template-cs.html
-│   ├── template-design.html
-│   ├── template-data.html
-│   ├── template-bio.html
-│   ├── template-business.html
-│   └── template-arch.html
+├── templates/          ← 6 pre-made designs — pick one if you want a different look
 │
-├── README.md           ← This is shown on the GitHub repo page
-├── AI_PROMPTS.md       ← Prompts to help you customise with ChatGPT / Claude
+├── README.md           ← Info shown on your GitHub page
+├── AI_PROMPTS.md       ← Prompts to help you edit with ChatGPT or Claude
 └── HOSTING_GUIDE.md    ← You are reading this
 ```
 
-**The most important rule about file names and folders:**
-
-> HTML, CSS, and images are linked by their file path. If you put your profile photo in a folder called `images/` and name it `profile.jpg`, the HTML needs to say `src="images/profile.jpg"`. If the name or folder is different, the image won't show up.
-
-Use lowercase letters and no spaces in file names. `profile-photo.jpg` is fine. `Profile Photo.jpg` will cause problems.
+**Important:** File names matter. If your photo is called `Profile.jpg` instead of `profile.jpg`, it will not show up. Always use lowercase letters and no spaces.
 
 ---
 
 ## Part 2 — Create a GitHub Account
 
+GitHub is a free website where you store and publish your code. Think of it like Google Drive, but for websites.
+
 1. Go to **github.com**
 2. Click **Sign up**
-3. Enter your email, create a password, and choose a username
+3. Enter your email, choose a password, and pick a username
 
-**Choosing your username:** This becomes part of your portfolio URL. Pick something professional — your real name or initials works well. `yashsukhdeve` or `yash-sukhdeve` are both fine.
+**Choosing your username:** This will appear in your website link. Use your real name or initials — something you would not be embarrassed to show a teacher or employer. Example: `alex-johnson` or `ajohnson2026`.
 
-Once you're in, you're on the GitHub dashboard. Leave this tab open.
+Once you are in, leave that tab open.
 
 ---
 
-## Part 3 — Fork This Repository
+## Part 3 — Get Your Own Copy of This Project
 
-"Forking" means making your own copy of this project. It takes 10 seconds.
+You need to make your own copy so you can edit it. This is called "forking."
 
-1. Make sure you're logged into GitHub
-2. Go to: `https://github.com/AVHBAC/undergrad-eportfolio-tutorial`
-3. In the top-right corner, click **Fork**
-4. On the next page, you can change the repository name if you want — or leave it as is
-5. Click **Create fork**
+1. Make sure you are logged into GitHub
+2. Go to the project page: `https://github.com/AVHBAC/undergrad-eportfolio-tutorial`
+3. Click the **Fork** button in the top-right corner
+4. Leave the name as it is and click **Create fork**
 
 You now have your own copy at `https://github.com/YOUR-USERNAME/undergrad-eportfolio-tutorial`
 
 ---
 
-## Part 4 — Turn on GitHub Pages
+## Part 4 — Turn Your Files into a Live Website
 
-This is what makes the files accessible as a website.
+This step tells GitHub to publish your files as a website.
 
-1. In your forked repo, click the **Settings** tab (top of the page)
-2. In the left sidebar, scroll down and click **Pages**
-3. Under **Source**, select **Deploy from a branch**
-4. Under **Branch**, select **main** and keep the folder as **/ (root)**
-5. Click **Save**
+1. Go to your forked copy on GitHub (the one with your username)
+2. Click the **Settings** tab at the top
+3. In the left menu, click **Pages**
+4. Under **Source**, click the dropdown and select **Deploy from a branch**
+5. Under **Branch**, select **main** and leave the folder as **/ (root)**
+6. Click **Save**
 
-GitHub will show a message like: *"Your site is being built"*
-
-Wait about 60 seconds, then refresh the page. You should see:
+Wait about 60 seconds, then refresh the page. You will see:
 
 > Your site is live at `https://your-username.github.io/undergrad-eportfolio-tutorial/`
 
-Click that link. Your portfolio is now live on the internet.
+Click that link — your portfolio is now on the internet.
 
 ---
 
 ## Part 5 — Edit the Files to Make It Yours
 
-Now you need to replace the placeholder text with your real information.
+Now you replace all the placeholder text with your real information.
 
-### Option A: Edit directly on GitHub (easiest, no install needed)
+### The easiest way — edit directly on GitHub
 
-1. In your repo, click on `index.html`
-2. Click the **pencil icon** (Edit this file) in the top-right corner of the file view
-3. Make your changes in the editor
-4. Scroll down to **Commit changes**, write a short note like *"Update name and bio"*, and click **Commit changes**
+1. Go to your repo and click on `index.html`
+2. Click the **pencil icon** (top right of the file) to edit
+3. Change the text — replace anything that says "Your Name", "Your University", etc.
+4. Scroll down, write a short note like *"Add my name"*, and click **Commit changes**
 5. Your live site updates in about 30–60 seconds
 
-Repeat this for each file you want to edit.
+Do this for each file: `index.html`, `projects.html`, `skills.html`, `resume.html`, `contact.html`.
 
-### Option B: Download, edit locally, upload back (more control)
+### What to change in each file
 
-1. In your repo, click the green **Code** button
-2. Click **Download ZIP**
-3. Unzip the folder on your computer
-4. Open the files in any text editor — Notepad works, but **VS Code** is free and much better: code.visualstudio.com
-5. Make your changes
-6. To upload back: in your repo on GitHub, go into the file, click the pencil icon, select all existing text, paste your edited version, and commit
+**index.html** — your name, your university, your bio, your GitHub and LinkedIn links
 
-### What to change first
+**projects.html** — delete the 3 example projects and add your own (title, description, GitHub link)
 
-Open `index.html` and find these lines — replace the placeholder text:
+**skills.html** — change the skill names and the percentage numbers to match your actual skills
 
-```html
-<!-- Replace "Your Name" everywhere -->
-<title>Your Name — E-Portfolio</title>
+**resume.html** — replace the education, experience, and achievements with yours
 
-<!-- Replace the bio paragraph -->
-<p>Undergrad student in Computer Science at [Your University]...</p>
-
-<!-- Replace the stats -->
-<strong>3+</strong><span>Projects</span>
-
-<!-- Replace GitHub and LinkedIn links -->
-<a href="https://github.com/YourUsername">GitHub</a>
-<a href="https://linkedin.com/in/yourhandle">LinkedIn</a>
-```
-
-Then open `projects.html`, `skills.html`, `resume.html`, and `contact.html` and do the same.
+**contact.html** — update your email, GitHub link, and LinkedIn link
 
 ---
 
 ## Part 6 — Add Your Photo
 
-1. Take a photo or find one you want to use
-2. Rename it `profile.jpg` (or `profile.png`)
-3. In your repo on GitHub, navigate to the root folder
-4. Click **Add file → Upload files**
-5. Drag your photo in, or click to browse
-6. Click **Commit changes**
+Your photo will show on the home page. The HTML is already set up — you just need to upload the file.
 
-Then in `index.html`, find this line and update the `src`:
+1. Find a photo you want to use
+2. **Rename the file to exactly:** `profile.jpg`
+3. In your GitHub repo, click **Add file → Upload files**
+4. A message says to upload into a folder — type `images/` before the file name so GitHub puts it in the right place. (If you just drag it to the root, move it into the `images` folder afterward.)
+5. Click **Commit changes**
 
-```html
-<img src="https://via.placeholder.com/180/..." alt="Profile photo" class="hero-photo"/>
-```
+That is it. Refresh your live site and your photo will appear.
 
-Change it to:
-
-```html
-<img src="images/profile.jpg" alt="Your Name" class="hero-photo"/>
-```
-
-If you put the photo in an `images/` folder, make sure to create that folder first on GitHub (you can do this by uploading a file into a path that includes the folder name — GitHub creates it automatically).
+**If your photo is a PNG not a JPG:** rename it `profile.png` and in `index.html` change `profile.jpg` to `profile.png`.
 
 ---
 
 ## Part 7 — Add Your Resume PDF
 
-1. Export your resume as a PDF from Word, Google Docs, or Canva
-2. Name the file `resume.pdf`
-3. Upload it to your GitHub repo (same way as the photo — **Add file → Upload files**)
-4. In `resume.html`, find the download button and update the link:
+1. Save your resume as a PDF (in Word: File → Save As → PDF; in Google Docs: File → Download → PDF)
+2. **Rename the file to exactly:** `resume.pdf`
+3. In your GitHub repo, click **Add file → Upload files**
+4. Drag `resume.pdf` in and click **Commit changes**
 
-```html
-<!-- Change this: -->
-<a href="#" class="btn" download>Download PDF</a>
-
-<!-- To this: -->
-<a href="resume.pdf" class="btn" download>Download PDF</a>
-```
+The Download button on your resume page is already linked to `resume.pdf` — it will work automatically once the file is uploaded.
 
 ---
 
-## Part 8 — Use a Theme Template Instead
+## Part 8 — Use a Different Design (Optional)
 
-If you want one of the six themed templates (CS Terminal, Design Studio, etc.) instead of the default template:
+There are 6 pre-made designs in the `templates/` folder. To see them, open `templates/index.html`.
 
-1. Go to `templates/` in your repo
-2. Open the template you want (e.g., `template-cs.html`)
-3. Click the pencil icon to edit
-4. Select all the text (Ctrl+A / Cmd+A), copy it
-5. Go back to your root folder and open `index.html`
-6. Select all text and paste the template code over it
-7. Commit the change
+To use one as your main page:
 
-Or: just use the template file directly as your index page by renaming it. In your repo:
-1. Click on `template-cs.html`
-2. Click the pencil icon
-3. Click the three dots (...) menu → **Rename**
-4. Rename to `index.html` (you'll need to delete or rename the existing `index.html` first)
+1. Open the template you want (e.g. `template-cs.html`)
+2. Click the pencil icon to edit it
+3. Press **Ctrl+A** (or **Cmd+A** on Mac) to select all the text, then copy it
+4. Go back to your root folder and open `index.html`
+5. Click the pencil icon, select all, and paste the template over it
+6. Click **Commit changes**
 
 ---
 
-## Part 9 — Rename Your Live URL (Optional)
+## Part 9 — Change Your Website URL (Optional)
 
 Right now your URL ends in `/undergrad-eportfolio-tutorial/`. You can shorten this.
 
-In your repo's **Settings → General**, scroll down to **Repository name** and change it to something like `portfolio`. Your URL becomes:
+In your repo, go to **Settings → General**, scroll to **Repository name**, and rename it to something like `portfolio`. Your URL becomes:
 
 `https://your-username.github.io/portfolio/`
-
-You can even use just your username as the repo name (e.g., `your-username.github.io`) and the URL becomes simply `https://your-username.github.io/`. To do this:
-
-1. Create a new repo named exactly `YOUR-USERNAME.github.io`
-2. Copy your portfolio files into it
-3. Turn on GitHub Pages as before
 
 ---
 
 ## Common Problems
 
-**My changes aren't showing up on the live site.**
+**My changes are not showing on the live site.**
 
-GitHub Pages can take 1–3 minutes to update. Wait and refresh. If it's been more than 5 minutes, check:
-- Settings → Pages: is it still turned on?
-- Did you commit your changes? (Editing and leaving without committing doesn't save.)
+GitHub Pages takes 1–3 minutes to update. Wait and refresh. If it has been more than 5 minutes:
+- Check Settings → Pages — is it still turned on?
+- Did you click "Commit changes" after editing? Just editing without committing does not save anything.
 
-**My image isn't showing.**
+**My photo is not showing.**
 
 Check three things:
-1. Is the file actually uploaded to the repo? Go to the repo and look.
-2. Is the file name in your HTML exactly the same as the actual file name? `Profile.jpg` and `profile.jpg` are different.
-3. Is the folder path correct? If the image is in `images/profile.jpg`, the `src` must say `images/profile.jpg`, not just `profile.jpg`.
+1. Is the file actually in the `images/` folder in your repo? Go look.
+2. Is the file named exactly `profile.jpg`? Capital letters and typos will break it.
+3. Did you commit the upload? Uploading without committing does not save.
 
-**The contact form says "This form is not active" or doesn't send anything.**
+**The Download Resume button does nothing.**
 
-You haven't connected Formspree yet. Follow Part 9.
+You have not uploaded `resume.pdf` yet. Follow Part 7.
 
-**The page looks unstyled / broken.**
+**The page looks broken or has no colour.**
 
-Check that `css/style.css` is still in your repo and that the `<link>` tag in your HTML files hasn't been accidentally deleted. Every HTML file has this near the top:
+Check that `css/style.css` is still in your repo. Every HTML file needs this line near the top — make sure it has not been deleted:
 ```html
 <link rel="stylesheet" href="css/style.css" />
 ```
 
-**I accidentally deleted something and can't fix it.**
+**I accidentally deleted something.**
 
-GitHub keeps a full history of every change. Go to your repo, click **Commits** (the clock icon), find the last version that worked, and click **Browse files** on that commit to see what it looked like. You can copy the old content and paste it back in.
+GitHub saves every version. Go to your repo, click the clock icon (**Commits**), find the last version that worked, and copy the old text back in.
 
 ---
 
-## That's It
+## You Are Done
 
-Once your site is live, the URL never changes (unless you rename the repo). You can keep editing the files and the site updates automatically every time you commit.
+Once your site is live, the link never changes (unless you rename the repo). Every time you commit a change, the site updates automatically within a minute or two.
 
-Share the link on your resume, LinkedIn, and email signature.
+Put the link on your resume, your LinkedIn profile, and your email signature.

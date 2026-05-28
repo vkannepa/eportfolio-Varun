@@ -1,70 +1,67 @@
 # Undergrad E-Portfolio Tutorial
 
-This is a plain HTML/CSS portfolio template built for a workshop talk. No frameworks, no npm, no build step — just files you open in a browser.
+A free, ready-to-use portfolio template for students. No coding experience needed. No installs. Just edit the files and put it live on the internet in minutes.
 
-**Scan to open this tutorial on GitHub — fork it and start building your portfolio.**
+**Scan the QR code below to open this project on GitHub, then fork it to get your own copy.**
 
 ![QR code to this GitHub repo](qr-code.png)
 
 ---
 
-## Files
+## What is in this project?
 
-| File | What it is |
-|------|------------|
-| `index.html` | Home page — your name, bio, and a quick intro |
-| `projects.html` | Project cards with tech badges and GitHub links |
-| `skills.html` | Skill progress bars and a soft skills list |
-| `resume.html` | Education and experience as a vertical timeline |
-| `contact.html` | Contact form and links to your profiles |
-| `css/style.css` | One stylesheet for all pages — change 4 variables to retheme |
-| `templates/` | 6 themed templates — pick the one that suits your field |
-| `AI_PROMPTS.md` | Prompts you can paste into ChatGPT or Claude to build/edit any part |
-| `HOSTING_GUIDE.md` | Step-by-step guide to put your portfolio live — written for beginners |
-| `generate_qr.py` | Regenerates `qr-code.png` if you change the URL |
-
----
-
-## Themed templates
-
-There are 6 ready-to-use templates for different fields, each with a distinct look:
-
-| Template | Field | Theme |
-|----------|-------|-------|
-| `template-cs.html` | Computer Science / SWE | Dark · neon green · monospace |
-| `template-design.html` | Design / UX / Creative Arts | Warm cream · bold coral · editorial serif |
-| `template-data.html` | Data Science / ML | Deep navy · electric teal · dot-grid |
-| `template-bio.html` | Biology / Life Sciences / Pre-Med | Warm organic · forest green · terracotta |
-| `template-business.html` | Business / Finance / Consulting | Dark luxury · warm gold · classical serif |
-| `template-arch.html` | Architecture / Civil / Urban Design | Stark Bauhaus · construction red · bold type |
-
-Open `templates/index.html` to preview all six side by side, or click directly into any template file.
-
-To use a template as your main page, copy its contents into `index.html` and replace the placeholder text.
+| File | What it does |
+|------|-------------|
+| `index.html` | Your home page — the first thing people see |
+| `projects.html` | A page to show your projects |
+| `skills.html` | A page to list your skills |
+| `resume.html` | A page with your education and work history |
+| `contact.html` | A page with your email and social links |
+| `css/style.css` | Controls the colours and layout on every page |
+| `images/` | Put your photos and screenshots here |
+| `resume.pdf` | Upload your CV here as a PDF |
+| `templates/` | 6 pre-made designs — pick one if you want a different look |
+| `AI_PROMPTS.md` | Prompts to help you edit with ChatGPT or Claude |
+| `HOSTING_GUIDE.md` | Step-by-step instructions to get your site live |
 
 ---
 
-## Getting started
+## How to get started
 
-**New to GitHub?** Read [`HOSTING_GUIDE.md`](HOSTING_GUIDE.md) first — it walks through everything from creating an account to adding photos and going live.
+1. **Fork this repo** — click the Fork button at the top right. This gives you your own copy.
+2. **Turn on GitHub Pages** — go to Settings → Pages → Source → main branch → Save.
+3. Your site goes live at `https://your-username.github.io/undergrad-eportfolio-tutorial/` within a minute.
+4. **Edit the files** to replace the placeholder text with your real information.
 
-Quick version if you already know the basics:
-
-1. **Fork** this repo (button top-right on GitHub).
-2. Go to **Settings → Pages → Source → main branch / root** and hit save.
-3. Your site goes live at `https://your-username.github.io/undergrad-eportfolio-tutorial/` in about a minute.
-4. Edit the files and replace the placeholder text.
+For full step-by-step instructions (including how to add your photo and resume), read [`HOSTING_GUIDE.md`](HOSTING_GUIDE.md).
 
 ---
 
-## Changing the colour scheme
+## The 6 themes
 
-At the top of `css/style.css` there are four variables. Change them and every button, link, and highlight on every page updates.
+There are 6 pre-made designs for different fields. Open `templates/index.html` to see them all side by side.
+
+| Template file | Best for |
+|---------------|----------|
+| `template-cs.html` | Computer Science / Software Engineering |
+| `template-design.html` | Design / UX / Creative Arts |
+| `template-data.html` | Data Science / Machine Learning |
+| `template-bio.html` | Biology / Life Sciences / Pre-Med |
+| `template-business.html` | Business / Finance / Consulting |
+| `template-arch.html` | Architecture / Civil / Urban Design |
+
+To use one, copy its contents into `index.html` and replace the placeholder text.
+
+---
+
+## Change the colour scheme
+
+Open `css/style.css` and change these 4 lines at the top. Every button, link, and highlight on every page will update.
 
 ```css
 :root {
   --accent:      #2563eb;   /* main colour */
-  --accent-dark: #1d4ed8;   /* hover state */
+  --accent-dark: #1d4ed8;   /* hover colour */
   --bg:          #f8fafc;   /* page background */
   --surface:     #ffffff;   /* card background */
 }
@@ -72,46 +69,19 @@ At the top of `css/style.css` there are four variables. Change them and every bu
 
 ---
 
-## Talk outline
+## Checklist — things to update after you fork
 
-| # | Topic |
-|---|-------|
-| 1 | Why bother with a portfolio — what employers and grad schools actually look for |
-| 2 | What pages to include and what to put on each |
-| 3 | HTML and CSS basics — structure vs style |
-| 4 | Walkthrough of this template |
-| 5 | Putting it live with GitHub Pages |
-| 6 | How to make it your own |
-
----
-
-## Customisation checklist
-
-Work through this after you fork:
-
-- [ ] Replace `Your Name` everywhere
-- [ ] Add your photo in `index.html` (or remove the placeholder)
-- [ ] Put your real projects in `projects.html`
+- [ ] Replace `Your Name` in all 5 HTML files
+- [ ] Add your photo — upload `profile.jpg` into the `images/` folder
+- [ ] Add your real projects in `projects.html`
 - [ ] Fix the skill percentages in `skills.html`
-- [ ] Add your actual education and experience in `resume.html`
-- [ ] Update GitHub, LinkedIn, and email links in `contact.html`
-- [ ] Add a real `resume.pdf` and link it in `resume.html`
-- [ ] Pick a colour — change `--accent` in `style.css`
+- [ ] Add your real education and work history in `resume.html`
+- [ ] Update your email, GitHub, and LinkedIn links in `contact.html`
+- [ ] Upload your CV as `resume.pdf`
+- [ ] Pick a colour — change `--accent` in `css/style.css`
 
 ---
 
 ## Why no JavaScript?
 
-The mobile nav, progress bar animations, and hover effects all work with CSS only. This keeps the template simple to understand and edit — no node_modules to install, no build step to break, works offline. If you want to add JS later, `AI_PROMPTS.md` has prompts for scroll progress bars, copy buttons, and project filters.
-
----
-
-## Regenerating the QR code
-
-If you rename the repo, update the URL in `generate_qr.py` then run:
-
-```bash
-pip install qrcode[pil]
-python generate_qr.py
-git add qr-code.png && git commit -m "update qr code"
-```
+Everything — the mobile menu, progress bar animations, hover effects — works with CSS only. This means no installs, no setup, and no broken dependencies. If you want to add JavaScript later, `AI_PROMPTS.md` has prompts to help you do that.
