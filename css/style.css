@@ -4,17 +4,17 @@
    ============================================================ */
 
 :root {
-  --accent:    #2563eb;   /* primary colour — buttons, links, highlights */
-  --accent-dark: #1d4ed8;
-  --bg:        #f8fafc;   /* page background */
-  --surface:   #ffffff;   /* card / panel background */
-  --text:      #1e293b;   /* body text */
-  --muted:     #64748b;   /* secondary / placeholder text */
-  --border:    #e2e8f0;
-  --radius:    0.5rem;
-  --shadow:    0 2px 8px rgba(0,0,0,.08);
-  --font:      'Segoe UI', system-ui, sans-serif;
-  --max-w:     1100px;
+  --accent:       #3b82f6;   /* Bright sapphire blue for highlights/links */
+  --accent-dark:  #60a5fa;   /* Lighter blue for hover states on dark bg */
+  --bg:           #0f172a;   /* Deep midnight blue page background */
+  --surface:      #1e293b;   /* Slate blue for cards, panels, and nav */
+  --text:         #f8fafc;   /* Crisp, off-white text for high readability */
+  --muted:        #94a3b8;   /* Muted grayish-blue for secondary text */
+  --border:       #334155;   /* Dark border line to separate components */
+  --radius:       0.5rem;
+  --shadow:       0 4px 12px rgba(0,0,0,.3); /* Slightly deeper shadow for dark mode */
+  --font:         'Segoe UI', system-ui, sans-serif;
+  --max-w:        1100px;
 }
 
 /* ── Reset ── */
