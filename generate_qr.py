@@ -10,7 +10,7 @@ Usage:
 
 import qrcode
 
-URL = "https://github.com/AVHBAC/undergrad-eportfolio-tutorial"
+URL = "https://github.com/vkannepa/eportfolio-Varun"
 
 qr = qrcode.QRCode(
     version=None,          # auto-size
